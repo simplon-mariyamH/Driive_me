@@ -18,32 +18,70 @@ C:::::C              o::::o     o::::od:::::d     d:::::d e::::::eeeeeeeeeee    
    CC:::::::::::::::Co:::::::::::::::o d:::::::::::::::::d e::::::::eeeeeeee       s::::::::::::::s o:::::::::::::::ol::::::lo:::::::::::::::o
      CCC::::::::::::C oo:::::::::::oo   d:::::::::ddd::::d  ee:::::::::::::e        s:::::::::::ss   oo:::::::::::oo l::::::l oo:::::::::::oo 
         CCCCCCCCCCCCC   ooooooooooo      ddddddddd   ddddd    eeeeeeeeeeeeee           sssssssssss       ooooooooooo   llllllll   ooooooooooo   
--->                                                                                                                                           
-                           <!-- ################################################################################ -->
+-->
+<!-- ################################################################################ -->
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="steelsheet" href="../style/style.css" type="text/css" />
-        <title>Document</title>
-    </head>
-                           <!-- ################################################################################ -->
-    <body>
-        <header>
-            <div id="logo_driive-me"> <!-- logo du site a placer en haut a droite -->
-                <a href="#" title="Accueil"><img src="../content/logo_driive_me.jpg" alt="logo driive me" /></a> <!-- faire le logo en svg -->
-            </div>
-            <ul >
-                <li><a href="">S'incrire</a></li>
-                <li><a href=""></a>Se connecter</li>
-                <li><a href=""></a>Aide</li>
-                <li><a href=""></a>Rechercher une location</li>
-                <li><a href=""></a><img src="/Images/flag/flag-FR.png" alt="Drapeau de france" title="Langues" /></li>
-                <li><a href=""></a>Un véhicule à d&eacute;placer ?</li>
-            </ul>
-            
-        </header>
-    </body>
-                           <!-- ################################################################################ -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../style/style.css" type="text/css" />
+    
+    <!-- Librairie normalize pour la frome de page css regler par default -->
+
+    <title>Document</title>
+</head>
+<!-- ################################################################################ -->
+
+<body>
+    <header>
+        <!-- logo du site a placer en haut a droite -->
+        <a href="#" title="Accueil">
+            <img src="../content/logo_driive_me.jpg" alt="logo driive me" id="logo_drrive_me" />
+        </a>
+        <!-- faire le logo en svg -->
+
+        <ul class="header_ul">
+            <li><a href="#">S'incrire</a></li>
+            <li><a href="#">Se connecter</a></li>
+            <li><a href="#">Aide</a></li>
+            <li><a href="#">Rechercher une location</a></li>
+            <li>
+                <a href="#">
+                    <img src="http://zencab.fr/wp-content/uploads/2015/12/drapeau-francais.png" alt="Drapeau de france" title="Langue"
+                    />
+                </a>
+            </li>
+            <li><a href="#">Un véhicule à d&eacute;placer ?</a></li>
+        </ul>
+
+        <!-- Select pour le responsivbe 
+
+                    <select class="navbar_select" onchange="location = this.option[this.selectIndex].value"> <!-- display none si la largeur depasse 700px sinon navbar normal -->
+        <!--    <option value="../style/style.css">Accueil</option>
+                    <option value="">Accueil</option>
+                    <option value="">Accueil</option>
+                    <option value="">Accueil</option>
+                    <option value="">Accueil</option>
+                    <option value="">Accueil</option>
+                    <option value="">Accueil</option>
+            </select>
+
+            -->
+    </header>
+    <!--
+        <div class="container_find">
+            <h1>LOUER UNE VOITURE
+              <br /> 
+              <span>EN ALLER SIMPLE POUR 1 EURO</span>
+            </h1>
+
+            <h4>Les loueurs doivent rapatrier leurs véhicules, 
+              <span>Faites-le pour 1 euro!</span>
+            </h4>
+        </div>
+    -->
+</body>
+<!-- ################################################################################ -->
+
 </html>
