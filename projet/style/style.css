@@ -1,5 +1,3 @@
-
-
 /*
 
  ██████╗███████╗███████╗
@@ -11,53 +9,129 @@
 
 */
 
+
 /*RESET DU BODY*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-    font-family: "Century Gothic", Helvetica, Arial, sans-serif; 
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: "Century Gothic", Helvetica, Arial, sans-serif;
 }
+
 
 /*Header*/
 
-header
-{
-    display: flex;    
+nav {
+    display: flex;
     justify-content: space-around;
     height: 15vh;
     width: 100%;
     background-color: #ffffff;
-
 }
+
+
 /*Fin du Header*/
 
+
 /*Logo driive me header*/
+
 #logo_driive_me {
     width: auto;
-    height: 90%;
+    height: 100%;
     margin-left: 10%;
     margin-top: -20px;
 }
 
+
 /*Fin Logo driive me header*/
 
+
 /*Navigation*/
+
 ul.nav_bar_header {
     height: 100%;
     width: auto;
@@ -67,37 +141,57 @@ ul.nav_bar_header {
     margin-top: 20px;
     z-index: 1;
 }
+
 .nav_bar_header a {
     text-decoration: none;
     padding: 0px 5px 0px 5px;
     margin-left: 30px;
-    color: #000000;
+    color: rgb(51, 54, 59);
 }
 
 .nav_bar_header a:hover {
     color: #000000;
     font-weight: 600;
     background-color: lightgray;
-    padding:20px;
+    padding: 20px;
 }
+
 .nav_bar_header img {
-    height: 20px;
-    width: 20px;
-} /*OK*/
+    margin-bottom: px;
+}
+
+
+/*OK*/
+
+
 /*Fin Navigation*/
 
-                        /* ######################################################################################## */
-                        /* ######################################################################################## */
-                        /* ######################################################################################## */
-                        /* ######################################################################################## */
-                        /* ######################################################################################## */
-                        /* ######################################################################################## */
-                        /* ######################################################################################## */
 
-.container_find { /*Bloc de recherche sur fonf bleu ciel*/
+/* ######################################################################################## */
+
+
+/* ######################################################################################## */
+
+
+/* ######################################################################################## */
+
+
+/* ######################################################################################## */
+
+
+/* ######################################################################################## */
+
+
+/* ######################################################################################## */
+
+
+/* ######################################################################################## */
+
+.container_find {
+    /*Bloc de recherche sur fonf bleu ciel*/
     height: 420px;
     width: auto;
-    background-color: #83c1de;
+    background-image: url("http://www.driiveme.com/Images/hero-bg.png");
     margin-top: -46px;
     z-index: 2;
     position: relative;
@@ -127,7 +221,9 @@ h1 {
     font-weight: 900;
     color: #000000;
 }
-                        /* ######################################################################################## */
+
+
+/* ######################################################################################## */
 
 
 /*Responsive adapter a tout les écrans // mettre la règle // @media query // 
@@ -151,55 +247,50 @@ tv : télévision ;
 projection : projecteur ;
 all : tous les types d'écran. */
 
+
 /* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1280px */
 
-@media screen and (max-width: 700px) { /* Si la largeur est < / = 700px*/
+@media screen and (max-width: 700px) {
+    /* Si la largeur est < / = 700px*/
     /*Pour le navbar*/
-
     ul {
         display: none;
     }
-
     li {
         display: none;
     }
-
     nav {
         padding: 7px;
     }
-
     .navbar_select {
         display: block;
         height: 30px;
         width: auto;
         justify-content: center;
         align-items: flex start;
-
-
     }
 }
 
-*/
-@media all and (max-device-width: 480px) { /*Concerne les mobiles*/
-    
+*/ @media all and (max-device-width: 480px) {
+    /*Concerne les mobiles*/
 }
+
+
 /* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
 
-@media all and (min-width: 1024px) and (max-width: 1280px) { /*Concernet les ecrans de type pc*/
-
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+    /*Concernet les ecrans de type pc*/
 }
+
 
 /* Sur les téléviseurs */
 
-@media tv {
-
-}
+@media tv {}
 
 
 /* Sur tous types d'écrans orientés verticalement */
 
 @media all and (orientation: portrait)
-
 /*Les mobiles :
 Navigateur
 Largeur du viewport par défaut
