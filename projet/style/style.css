@@ -10,7 +10,7 @@
 */
 
 
-/*RESET DU BODY*/
+/* RESET DU BODY */
 
 html,
 body,
@@ -105,29 +105,32 @@ video {
 
 /*Header*/
 
-nav {
-    display: flex;
-    justify-content: space-around;
+header {
     height: 15vh;
     width: 100%;
     background-color: #ffffff;
 }
 
 
-/*Fin du Header*/
+/*Container_header*/
+
+.container_header {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    max-width: 100%;
+    z-index: 1;
+}
 
 
 /*Logo driive me header*/
 
-#logo_driive_me {
-    width: auto;
-    height: 100%;
-    margin-left: 10%;
-    margin-top: -20px;
+header #logo_driive_me {
+    height: 40%;
+    width: 100%;
+    margin-left: -15%;
+    margin-top: 7px;
 }
-
-
-/*Fin Logo driive me header*/
 
 
 /*Navigation*/
@@ -142,6 +145,14 @@ ul.nav_bar_header {
     z-index: 1;
 }
 
+.nav_bar_header_select {
+    max-width: none;
+}
+
+.nav_bar_header_select img {
+    vertical-align: middle;
+}
+
 .nav_bar_header a {
     text-decoration: none;
     padding: 0px 5px 0px 5px;
@@ -151,38 +162,14 @@ ul.nav_bar_header {
 
 .nav_bar_header a:hover {
     color: #000000;
-    font-weight: 600;
+    font-weight: 0;
     background-color: lightgray;
-    padding: 20px;
+    padding: 30px;
 }
 
 .nav_bar_header img {
-    margin-bottom: px;
+    margin: -5px 25px -6px 0px;
 }
-
-
-/*OK*/
-
-
-/*Fin Navigation*/
-
-
-/* ######################################################################################## */
-
-
-/* ######################################################################################## */
-
-
-/* ######################################################################################## */
-
-
-/* ######################################################################################## */
-
-
-/* ######################################################################################## */
-
-
-/* ######################################################################################## */
 
 
 /* ######################################################################################## */
@@ -193,8 +180,10 @@ ul.nav_bar_header {
     width: auto;
     background-image: url("http://www.driiveme.com/Images/hero-bg.png");
     margin-top: -46px;
+    align-items: center;
     z-index: 2;
     position: relative;
+    /*la position est necessaire pour que le nav ne soit pas sur le bloc container (lien z-ondex)*/
 }
 
 h1 {
@@ -212,19 +201,181 @@ h1 {
     font-size: 35px;
 }
 
-.container_find h4 {
+.container_find h3 {
     color: #333333;
     text-align: center;
+    font-size: 19px;
+    line-height: 40px;
 }
 
-.container_find h4 span {
+.container_find h3 span {
     font-weight: 900;
     color: #000000;
+}
+
+.formulaire_input {
+    border: none;
+}
+
+.formulaire_form .formulaire_span_A {
+    color: #AAAAAA;
+}
+
+.formulaire_form .formulaire_span_B {
+    color: #AAAAAA;
+}
+
+
+/*
+On commence par annuler les styles
+des ul et li dans le form
+*/
+
+.find {
+    width: 58%;
+    height: 4em;
+    background-color: #6595AC;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+}
+
+.find_A {
+    width: 31%;
+    height: 3em;
+    background-color: #ffffff;
+    padding: 1px;
+    margin-left: 0%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 2px;
+}
+
+.find_A img {
+    background: no-repeat;
+    margin-left: 2%;
+}
+
+.find_A p {
+    background: no-repeat;
+    margin-left: 2%;
+    color: #AAAAAA;
+}
+
+.find_B {
+    width: 31%;
+    height: 3em;
+    background-color: #ffffff;
+    padding: 1px;
+    margin-left: 3%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 2px;
+}
+
+.find_B img {
+    background: no-repeat;
+    margin-left: 2%;
+}
+
+.find_B p {
+    background: no-repeat;
+    margin-left: 2%;
+    color: #AAAAAA;
+}
+
+.find_location {
+    width: 31%;
+    height: 3em;
+    padding: 1px;
+    margin-left: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ED5153;
+    border-radius: 2px;
+}
+
+.find_location p {
+    color: #ffffff;
+    background-color: #ED5153;
+}
+
+.find_location a {
+    color: #ffffff;
+    list-style: none;
+    text-decoration: none;
+    padding: 18px;
+}
+
+.container_image {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container_building {
+    margin: 0 auto;
+    margin-top: -2%;
+}
+
+.container_car {
+    margin: 0 auto;
+    margin-top: -3%;
+}
+
+.container_imageAB {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.container_bigAB {
+    margin-left: 2%;
+    margin-top: -6%;
+}
+
+.container_bigAB {
+    margin-left: 2%;
+    margin-top: -6%;
+}
+
+.container_footer {
+    height: 8em;
+    width: 100%;
+    background-color: #33363B;
+    margin-top: -3%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-left: 0%;
+}
+
+.container_footer p {
+    color: #7F838A;
 }
 
 
 /* ######################################################################################## */
 
+.container_deroulant {
+    width: 100%;
+    height: 20em;
+    background-color: #F2F2F2;
+    margin-top: 40%;
+}
+
+
+}
+.container_deroulant h2 {
+    margin-top: 10%;
+}
 
 /*Responsive adapter a tout les écrans // mettre la règle // @media query // 
 
@@ -247,21 +398,23 @@ tv : télévision ;
 projection : projecteur ;
 all : tous les types d'écran. */
 
-
 /* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1280px */
-
 @media screen and (max-width: 700px) {
     /* Si la largeur est < / = 700px*/
     /*Pour le navbar*/
+    
     ul {
         display: none;
     }
+    
     li {
         display: none;
     }
+    
     nav {
         padding: 7px;
     }
+    
     .navbar_select {
         display: block;
         height: 30px;
@@ -270,26 +423,19 @@ all : tous les types d'écran. */
         align-items: flex start;
     }
 }
-
 */ @media all and (max-device-width: 480px) {
     /*Concerne les mobiles*/
 }
 
-
 /* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
-
 @media all and (min-width: 1024px) and (max-width: 1280px) {
     /*Concernet les ecrans de type pc*/
 }
 
-
 /* Sur les téléviseurs */
-
 @media tv {}
 
-
 /* Sur tous types d'écrans orientés verticalement */
-
 @media all and (orientation: portrait)
 /*Les mobiles :
 Navigateur
